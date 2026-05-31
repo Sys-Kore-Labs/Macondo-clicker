@@ -1,0 +1,72 @@
+<html>
+<head>
+<title> Tap Tap Coffee Macondo v2 inde.html </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-container">
+
+<div id="Header" style="border-bottom: 1px solid white;">
+<h1>Tap Tap Coffee Macondo Tyccon <font size="2" color="gray">v0.1.4</font></h1>
+
+<div style="float: right; margin-top: -40px;"> <b>Gold: <span id="oroTotal">0</span></b>
+<button id="btnSettings" onclick="alert('luego hago el menu')">Config</button>
+</div>
+</div>
+<br>
+
+<div class="izq">
+<center>
+<h2>The farm</h2>
+
+<button id="sandia_clicker">
+    ☕ HARVEST!!! <br>
+    <span id="coffee_screen">0</span>
+</button>
+</center>
+<br>
+
+<div id="stats" style="margin-left: 20px;">
+Click power: <span id="pow">1</span> <br> 
+SPS (auto): <span id="sps">0</span> <br>
+Multi: <font color="yellow"><b>x1.0</b></font><br>
+</div>
+<br>
+
+<center>
+<button id="sell" style="background: orange; width: 85%; font-weight: bold;">Sell 100☕ = 1 Gold</button>
+</center>
+<br><br>
+
+<button id="saveBtn" style="margin-left:20px;">Save game</button>
+<button id="borrar" style="background-color: red; color:white;">Borrar (Dont tocuh!!)</button>
+<br>
+<font size="1" color="gray">&nbsp;&nbsp;&nbsp;last save: nunca</font>
+</div>
+
+<div class="RightSide_bro">
+
+<h3 style="margin-top:10;">Shop 🛒</h3>
+Filter:
+<select id="filtro_tienda">
+<option value="1">All</option>
+<option value="2">Tools</option>
+</select>
+<br><br>
+
+<div id="lista">
+<i>loading items...</i>
+</div>
+<br>
+
+<h3>Automation</h3>
+Engine State: <span id="engine_status" style="color:white !important; font-weight: bold; text-shadow: 1px 1px 2px black;">OFF</span>
+<button id="btn_on">Turn ON/OFF</button>
+
+<br><br>
+<h3>Inventory</h3>
+<div id="inv_box">Empty</div>
+<script src="macondo.js"></script>
+</body>
+</html>

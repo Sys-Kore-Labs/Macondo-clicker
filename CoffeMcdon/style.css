@@ -1,0 +1,311 @@
+/* ===================================================================
+   Macondo Clicker - Styles overide Beta 1.2
+   Date: Indefinido 
+   WTF is this HTML bro.... I had to important everyhing.
+   If you touch the flexbox or the z-index, the whole layout dies.
+   ====================================================================
+*/
+
+:root {
+    --green-main: #2ecc71;
+    --dark-bg: #111;
+    --gold-color: #f1c40f;
+    --danger-red: #e74c3c;
+    /*idk what to  call this color*/
+    --weird-gray: #2a2a2a;
+}
+
+/* forcing the body to stop being gray */
+body {
+    background: radial-gradient(circle, #1a1a24 0%, #050505 100%) !important;
+    font-family: 'Courier new', Courier, monospace !important;
+    margin: 0;
+    padding: 10px;
+    overflow-x: hidden;
+    /*user-selected: none; TODO: uncomment later maybe */
+}
+
+/* the main container hack */
+body > div:nth-child(1) {
+    background: #141414 !important;
+    border: 2px solid #333 !important;
+    border-radius:8px !important;
+    box-shadow: 0px 20px 50px rgba(0,0,0,0.9) !important;
+    padding: 20px !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header fixes */
+#Header {
+    border-bottom: 2px dashed #444 !important;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+}
+
+#Header h1 {
+    color: var(--green-main) !important;
+    text-shadow: 2px 2px 0px #000;
+    margin: 0;
+}
+
+#Header > div {
+    /* killing the inline float*/
+    float: none !important;
+    margin-top: 0 !important;
+    background: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+#oroTotal {
+    color: var(--gold-color) !important;
+    font-size: 28px !important;
+    font-weight: 900;
+    text-shadow: 0 0 10px rgba(241, 196, 15, 0.4);
+}
+
+/* ====The mighty button === */
+#sandia_clicker {
+    background: linear-gradient(180deg, #27ae60 0%, #1e8449 100%) !important;
+    border: none !important;
+    border-bottom: 6px solid #146a32 !important;
+    border-radius: 15px !important;
+    color: white !important;
+    text-shadow: 1px 1px 2px #000 !important;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5) !important;
+    transition: all 0.05s ease !important;
+    position: relative;
+    cursor: pointer;
+    /* padding-top: 15px !important; */
+}
+
+#sandia_clicker:active {
+    transform: translateY(6px) !important;
+    border-bottom-width: 0px !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5) !important;
+}
+
+/* STATS */
+#stats {
+    background: #000 !important;
+    border: 1px solid #222 !important;
+    border-left: 5px solid var(--green-main) !important;
+    padding: 15px !important;
+    border-radius: 4px;
+    line-height: 1.8 !important;
+    color: #cccccc !important;
+}
+
+#stats font[color="yellow"] {
+    color: var(--gold-color) !important;
+    font-size: 1.2em;
+    text-shadow: 0 0 6px rgba(241,196,15,0.3);
+}
+
+/* Sell btn */
+#sell {
+    background: linear-gradient(to bottom, #e67e22, #d35400) !important;
+    border: 1px solid #a04000 !important;
+    border-bottom: 4px solid #873600 !important;
+    border-radius: 6px !important;
+    color: #fff !important;
+    text-shadow: 1px 1px 0px #000;
+    transition: 0.1s;
+}
+#sell:active { transform: translateY(4px); border-bottom-width: 0px !important; }
+
+/* Right side panels */
+.RightSide_bro {
+    background: #0a0a0a !important;
+    border: 1px solid #333 !important;
+    border-radius: 6px;
+    padding: 15px !important;
+}
+
+/*THE SHOP CONTAINER */
+#lista {
+    background: #050505 !important;
+    height: 300px !important; /* increased this so it's actually playable */
+    padding: 5px !important;
+    border-radius: 4px;
+    overflow-y: scroll;
+}
+
+/* custom scrollbar */
+#lista::-webkit-scrollbar { width: 6px; }
+#lista::-webkit-scrollbar-track { background: #000; }
+#lista::-webkit-scrollbar-thumb { background: #444; border-radius: 10px; }
+
+/* dynamically generated shop rows */
+.shop-item-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    border: 1px solid #333;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+.shop-item-card:hover { background: #1a1a1a; border-color: #555; }
+
+/* colors for different item types */
+.t-tool { border-left: 3px solid var(--green-main); }
+.t-auto { border-left: 3px solid #3498db; }
+.t-magic { border-left: 3px solid #9b59b6; }
+
+.item-left-col {width: 70%; display: flex; flex-direction: column; }
+.item-title { font-weight: bold; color: #ddd; font-size: 13px; }
+.item-desc { font-size: 10px; color: #777; margin-top: 3px; }
+.item-price-tag { font-size: 11px; font-weight: bold; margin-top: 4px; }
+.c-oro { color: var(--gold-color); }
+.c-cafe { color: var(--green-main); }
+
+.buy-btn-custom {
+    background: #2c3e50;
+    color: white;
+    border: 1px solid #34495e;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+}
+.buy-btn-custom:disabled {
+    background: #111; color: #444; border-color: #222; cursor: not-allowed;
+}
+
+/* Buttons at buttom */
+#btn_on, #btn_upg, #saveBtn, #borrar {
+    padding: 8px 12px !important;
+    border-radius: 4px !important;
+    border-radius: 4px !important;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+#btn_on { background: #333 !important; }
+#saveBtn { background: #2980b9 !important; border-color: #1c5980 !important;}
+#borrar { background: var(--danger-red) !important; border-color: #900 !important; }
+
+/* PARTICLES & SHAKING */
+.flying-number {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    pointer-events: none;
+    z-index: 10000;
+    text-shadow: 0 0 5px #000, 2px 2px 0 #000;
+    animation: floatUp 1s ease-out forwards;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-50px); opacity: 0; }
+}
+
+.shake-it { animation: shk 0.3s ease-in-out; }
+@keyframes shk {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); background: #800000 !important; }
+    50% {transform: translateX(5px); }
+    75% {transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* INVENTORY FIX */
+#inv_box {
+    background: #000;
+    border: 1px dashed #444;
+    padding: 10px;
+    height: 80px;
+    overflow-y: auto;
+    font-size: 11px;
+    color: #999;
+}
+
+/* WIDGETS */
+.market-box {
+    background: #1a1a00;
+    border: 1px solid var(--gold-color);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+#engine_status {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    font-family: Arial, sans-serif;
+    padding: 2px 5px;
+}
+
+#lista .item_tienda {
+    color: white !important;
+    background: #222 !important;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #444;
+    border-radius: 4px
+}
+
+#lista .item-tienda b, #lista .item-tienda span {
+    color: #f1c40f !important;
+}
+
+#lista div {
+    color: white !important;
+    background: #222 !important;
+    border: 1px solid #444 !important;
+    padding: 8px !important;
+    margin-bottom: 5px !important;
+    border-radius: 5px !important;
+}
+
+#lista b, #lista span {
+    color: #f1c40f !important;
+}
+
+#lista button {
+    background: #2ecc71 !important;
+    color: black !important;
+    font-weight:bold !important;
+}
+
+#lista div {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    padding: 10px !important;
+    border-bottom: 1px solid #444 !important;
+    margin-bottom: 5px !important;
+    font-family: 'Courier New', monospace !important;
+}
+
+#lista b {
+    color: #f1c40f !important;
+}
+
+#lista button {
+    background: #2ecc71 !important;
+    color: black !important;
+    font-weight: bold !important;
+    border: none !important;
+    padding: 5px 10px !important;
+}
+.izq {
+    color: white !important;
+}
+
+.RightSide_bro h3 {
+    color: white !important;
+}
+
+.RightSide_bro {
+    color: white !important;
+}
