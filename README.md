@@ -1,6 +1,37 @@
 # Macondo-clicker
 
 # ☕ CoffeeClicker: Macondo Edition 
+Macondo-clicker
+
+
+
+☕ CoffeeClicker: Macondo Edition 🍍
+
+
+
+I wanted to blend the magical realism of Macondo with a cozy, addictive clicker game. It's time to head Back to the farm!
+
+You must click to get coffee beans and improve your farm. You can also hire helpers. It's still in beta, but I'm still developing it. There are random events. If you find a bug, don't hesitate to DM me.
+
+🚀 Play It Now
+
+
+
+👉 Click here to play CoffeeClicker!
+
+🧑‍💻 Honest Dev Notes (10h Logged)
+
+
+
+Pure HTML, CSS, & Vanilla JS.
+
+
+
+My parts: The whole concept, the Macondo lore, the mechanics, and the CSS look.
+
+The AI ​​parts: Used it as a coding partner to calculate the multipliers and debug some tricky JS intervals so the game wouldn't crash when numbers got out of hand. 
+
+
 
 CoffeeClicker: Macondo Edition Welcome to the farm! This is an incremental clicker game inspired by the magic and nostalgia of Macondo. The idea is simple: you start by harvesting coffee beans by hand and, little by little, you grow your business by hiring helpers and upgrading your tools to automate everything. What's it all about? Manual Harvesting: Click to collect your first coffee beans. Automation: When you have enough, hire workers like "El Primo" or laborers to work for you. Management: Sell your coffee to get gold and unlock upgrades that will make your production soar. Your Own Farm: Manage the state of your production engine and decide when is the best time to sell. About Development This project is my way of paying homage to coffee culture. It's built from scratch using only index.html, style.css, and macondo.js. No heavyweights or complicated frameworks; I wanted it to be lightweight and load instantly. Current Status The game is in Beta. I'm still fine-tuning the multipliers to keep the pace fun and tweaking some technical details so the numbers don't go haywire when the farm starts producing big. How to play? Just download the files and open index.html in your browser. It's that easy! Any tips or bugs?
 
