@@ -1,34 +1,7 @@
 # Macondo-clicker
 
-# ☕ CoffeeClicker: Macondo Edition 🍍
+# ☕ CoffeeClicker: Macondo Edition 
 
-I've always loved the chaotic, beautiful vibe of magical realism, so I decided to blend the world of Macondo with a cozy, addictive incremental game. It's time to head *Back to the farm*!
+CoffeeClicker: Macondo Edition Welcome to the farm! This is an incremental clicker game inspired by the magic and nostalgia of Macondo. The idea is simple: you start by harvesting coffee beans by hand and, little by little, you grow your business by hiring helpers and upgrading your tools to automate everything. What's it all about? Manual Harvesting: Click to collect your first coffee beans. Automation: When you have enough, hire workers like "El Primo" or laborers to work for you. Management: Sell your coffee to get gold and unlock upgrades that will make your production soar. Your Own Farm: Manage the state of your production engine and decide when is the best time to sell. About Development This project is my way of paying homage to coffee culture. It's built from scratch using only index.html, style.css, and macondo.js. No heavyweights or complicated frameworks; I wanted it to be lightweight and load instantly. Current Status The game is in Beta. I'm still fine-tuning the multipliers to keep the pace fun and tweaking some technical details so the numbers don't go haywire when the farm starts producing big. How to play? Just download the files and open index.html in your browser. It's that easy! Any tips or bugs?
 
----
-
-## 🌾 What's the vibe?
-The game loop is simple: you click to harvest premium coffee beans and tropical fruits, using your earnings to upgrade your Colombian farm.
-
-But I wanted to add a fun twist, so I coded a **Pineapple Mechanic**. Just like in real life, if you gorge on too much pineapple, the *bromelain* enzyme kicks in. In-game, this makes your mouth itch and forces you to adapt your clicking strategy on the fly. As things scale up, you can hire local helpers inspired by Macondo's unique townspeople to automate the harvest while you watch the numbers grow. It's still in the trial version, that is, the beta, I'm still improving the game.
-
----
-
-## 🛠️ Built From Scratch
-No heavy frameworks or game engines here. I kept it old-school and lightweight:
-* **HTML & CSS** for the core layout and making the farm interface look cozy.
-* **Vanilla JavaScript** to handle the state, interval timers, and the mathematical scaling.
-
----
-
-## 🚀 Play It Now
-It runs completely in your browser, no setup required:
-👉 **[Click here to play CoffeeClicker!](https://sys-kore-labs.github.io/Macondo-clicker/CoffeMcdon/)**
-
----
-
-## 🧑‍💻 Honest Dev Notes (10h Logged)
-
-I spent about 10 hours grinding on this project between coding and log entries. And there will be more but I continue developing it. Here is the raw breakdown of how it came together:
-
-* **The Human Side:** The entire concept, the Macondo theme, the game balance, the mechanics (like the pineapple itch), and the visual interface came straight from my own head and brainstorming sessions.
-* **The AI ​​Side:** Keeping it 100% honest—I used AI as a rubber-ducking and coding partner. It was super helpful for mathing out the exponential scaling of the multipliers and debugging some annoying JavaScript intervals that kept overlapping. It basically saved me from crashing the browser when the coffee count started getting ridiculous.
+The project is still growing. If you see anything odd about the interface or have any ideas for improving the game, let me know! All help is welcome to make this experience even better.
